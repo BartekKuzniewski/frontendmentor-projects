@@ -1,0 +1,129 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Red Hat Display', sans-serif;
+	background-image: url(../images/pattern-background-mobile.svg);
+	background-color: hsl(225, 100%, 94%);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.card {
+	width: 350px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #fff;
+	margin: 40px auto;
+	// border: 2px solid black;
+	border-radius: 15px;
+
+	&__image {
+		img {
+			height: 170px;
+			width: 100%;
+			border-top-left-radius: 15px;
+			border-top-right-radius: 15px;
+		}
+	}
+
+	&__info {
+		text-align: center;
+
+		h3 {
+			margin-top: 20px;
+		}
+
+		p {
+			margin: 5px 20px;
+			padding: 10px;
+			line-height: 28px;
+			color: grey;
+		}
+	}
+
+	&__subscription {
+		display: flex;
+		align-items: center;
+		justify-content: space-beetwen;
+		background-color: rgb(243, 243, 243);
+        margin-bottom: 10px;
+        border-radius: 10px;
+		// padding: 10px 20px;
+
+		&--icon {
+			padding: 15px;
+		}
+        
+        &--plan {
+            margin-right: 40px;
+
+            h4 {
+                font-size: 16px;
+            }
+            p {
+                color: grey;
+                margin-top: 5px;
+                font-size: 14px;
+                font-weight: lighter;
+            }
+        }
+
+        a {
+            padding: 20px;
+            font-size: 14px;
+			transition: text-decoration .7s, color .3s;
+        }
+
+		a:hover {
+			text-decoration: none;
+			color: hsl(263, 69%, 48%);
+		}
+	}
+
+    .payment {
+        margin: 10px;
+        padding: 17px 75px;
+        border: none;
+        border-radius: 10px;
+        background: hsl(224, 69%, 50%);
+        color: #fff;
+        font-weight: bold;
+		letter-spacing: 1px;
+        cursor: pointer;
+		transition: background .4s;
+    }
+
+	.payment:hover {
+		background: hsl(263, 69%, 48%);
+	}
+
+	.cancel {
+		margin-bottom : 20px;
+		padding: 17px 75px;
+		border: none;
+		background: none;
+		font-weight: bold;
+		color: rgb(172, 172, 172);
+		transition: color .6s;
+		cursor: pointer;
+	}
+
+	.cancel:hover {
+		color: #000;
+	}
+}
