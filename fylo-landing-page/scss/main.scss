@@ -1,0 +1,96 @@
+@import './colors';
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%; // = 10px
+}
+
+body {
+	font-family: 'Open Sans', sans-serif; 
+	// font-family: 'Raleway', sans-serif;
+}
+
+//HEADER
+
+.header {
+	position: fixed;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1em 2em;
+	z-index: 1000;
+
+	&__logo {
+		padding: 1em 0;
+		margin-right: 2em;
+		align-items: center;
+		cursor: pointer;
+		width: 80px;
+	}
+
+	.nav {
+
+		&__item {
+			margin-right: 1em;
+			padding: 1em 0;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 400;
+			font-size: 1.4rem;
+			color: $very-dark-blue;
+			text-decoration: none;
+			transition: color .3s;
+		}
+
+		&__item:hover {
+			color: $bright-blue;
+		}
+	}
+
+}
+
+
+// MEDIA QUERES
+
+@media (min-width: 576px) {
+	.header {
+		padding: 2em 3em;
+
+		&__logo {
+			width: 100px;
+			
+		}
+
+		.nav {
+			&__item {
+				font-size: 1.8rem;
+				padding: 1em .5em;
+
+			}
+		}
+	} 
+}
+
+
+@media (min-width: 992px) {
+	.header {
+		padding: 2em 5em;
+		
+		&__logo {
+			width: 130px;
+		}
+
+		.nav {
+			&__item {
+				font-size: 2rem;
+				padding: 1em 1em;
+			}
+		}
+	} 
+}
