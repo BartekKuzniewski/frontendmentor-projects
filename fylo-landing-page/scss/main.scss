@@ -12,85 +12,80 @@ html {
 }
 
 body {
-	font-family: 'Open Sans', sans-serif; 
+	font-family: 'Open Sans', sans-serif;
 	// font-family: 'Raleway', sans-serif;
 }
 
-//HEADER
-
-.header {
-	position: fixed;
+.wrapper {
+	margin: 0 auto;
 	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 1em 2em;
-	z-index: 1000;
+	max-width: 1200px;
+}
 
-	&__logo {
-		padding: 1em 0;
-		margin-right: 2em;
+//NAVIGATION
+
+.nav {
+	// background-color: red;
+	.wrapper {
+		display: flex;
 		align-items: center;
+		justify-content: space-between;
+		padding: 1em;
+	}
+
+	
+	&__logo {
+		width: 100px;
+		padding: 1em;
 		cursor: pointer;
-		width: 80px;
 	}
 
+	&__item {
+		padding: 1em;
+		font-size: 1.3rem;
+		font-family: 'Raleway', sans-serif;
+		color: $desaturated-blue;
+		text-decoration: none;
+		cursor: pointer;
+		transition: .3s color;
+
+		&:hover {
+			color: hsl(268, 38%, 63%);
+		}
+
+	}
+}
+
+
+
+// ==========
+// MEDIA 
+// ==========
+
+@media(min-width: 576px) {
 	.nav {
-
-		&__item {
-			margin-right: 1em;
-			padding: 1em 0;
-			font-family: 'Raleway', sans-serif;
-			font-weight: 400;
-			font-size: 1.4rem;
-			color: $very-dark-blue;
-			text-decoration: none;
-			transition: color .3s;
-		}
-
-		&__item:hover {
-			color: $bright-blue;
-		}
-	}
-
-}
-
-
-// MEDIA QUERES
-
-@media (min-width: 576px) {
-	.header {
-		padding: 2em 3em;
-
 		&__logo {
-			width: 100px;
-			
-		}
-
-		.nav {
-			&__item {
-				font-size: 1.8rem;
-				padding: 1em .5em;
-
-			}
-		}
-	} 
-}
-
-
-@media (min-width: 992px) {
-	.header {
-		padding: 2em 5em;
-		
-		&__logo {
+			margin-left: 2em;
 			width: 130px;
 		}
-
-		.nav {
-			&__item {
-				font-size: 2rem;
-				padding: 1em 1em;
-			}
+		&__items {
+			margin-right: 2em;
 		}
-	} 
+		&__item {
+			font-size: 1.6rem;
+		}
+	}
+}
+
+@media(min-width: 992px) {
+	.nav {
+		margin-top: 2em;
+
+		&__logo {
+			width: 150px;
+		}
+		&__item {
+			font-size: 1.8rem;
+		}
+	}
 }
