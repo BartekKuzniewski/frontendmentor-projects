@@ -29,7 +29,6 @@ img {
 //NAVIGATION
 
 .nav {
-	
 	.wrapper {
 		display: flex;
 		align-items: center;
@@ -117,6 +116,87 @@ img {
 	}
 }
 
+//SECTION
+
+.section {
+	background-color: $light-grayish-blue;
+
+	&__content {
+		margin: 8em 3em 0;
+		padding-bottom: 5em;
+
+		&-heading {
+			margin: 4em 0 1em;
+			font-size: 1.8rem;
+			text-align: center;
+		}
+
+		&-text {
+			font-size: 1.4rem;
+			line-height: 24px;
+			opacity: 0.7;
+			margin-bottom: 1em;
+		}
+
+		&-link {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			a {
+				color: $moderate-cyan;
+				font-size: 1.3rem;
+				text-decoration: none;
+				padding: 1em 0.5em;
+				// to do: underline
+			}
+		}
+
+		&-card {
+			position: relative;
+			background-color: $white;
+			margin: 3em 2em;
+
+			.quotes {
+				position: absolute;
+				left: 2.4em;
+				top: 2em;
+			}
+			//box shadow
+
+			&-text {
+				font-size: 1.2rem;
+				padding: 4em 1em 1em 2em;
+				line-height: 20px;
+			}
+
+			&-bottom {
+				display: flex;
+				align-items: center;
+				padding: .5em 2em 3em;
+				
+
+				img {
+					border-radius: 50%;
+					width: 40px;
+					margin-right: 1em;
+				}
+
+				&-data {
+					.name {
+						font-weight: bold;
+						margin-bottom: 0.5em;
+					}
+
+					.ceo {
+						font-size: 0.7rem;
+					}
+				}
+			}
+		}
+	}
+}
+
 // ==========
 // MEDIA
 // ==========
@@ -150,7 +230,6 @@ img {
 	}
 }
 @media (min-width: 756px) {
-
 	.wrapper {
 		display: flex;
 		align-items: center;
@@ -189,7 +268,6 @@ img {
 			}
 		}
 	}
-
 }
 @media (min-width: 992px) {
 	.nav {
@@ -215,4 +293,3 @@ img {
 		}
 	}
 }
-
