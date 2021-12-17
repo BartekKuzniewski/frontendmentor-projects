@@ -60,7 +60,7 @@ img {
 // HEADER
 
 .header {
-	margin: 0 3em;
+	margin: 0 3em 4em;
 
 	&__content {
 		margin-top: 2em;
@@ -121,6 +121,10 @@ img {
 .section {
 	background-color: $light-grayish-blue;
 
+	&__img {
+		padding: 3em;
+	}
+
 	&__content {
 		margin: 8em 3em 0;
 		padding-bottom: 5em;
@@ -156,6 +160,7 @@ img {
 			position: relative;
 			background-color: $white;
 			margin: 3em 2em;
+			max-width: 300px;
 
 			.quotes {
 				position: absolute;
@@ -173,8 +178,7 @@ img {
 			&-bottom {
 				display: flex;
 				align-items: center;
-				padding: .5em 2em 3em;
-				
+				padding: 0.5em 2em 3em;
 
 				img {
 					border-radius: 50%;
@@ -228,6 +232,30 @@ img {
 			}
 		}
 	}
+
+	.section {
+		&__img {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			img {
+				max-width: 80%;
+			}
+		}
+		&__content {
+			&-heading {
+				font-size: 2.2rem;
+			}
+			&-text {
+				font-size: 1.6rem;
+			}
+			&-link {
+				a {
+					font-size: 1.4rem;
+				}
+			}
+		}
+	}
 }
 @media (min-width: 756px) {
 	.wrapper {
@@ -236,7 +264,7 @@ img {
 	}
 
 	.header {
-		margin-top: 4em;
+		margin: 4em;
 
 		&__img {
 			order: 1;
@@ -268,7 +296,35 @@ img {
 			}
 		}
 	}
+
+	.section {
+		&__img {
+			order: 1;
+
+			img {
+				max-width: 100%;
+			}
+		}
+
+		&__content {
+			
+			&-heading {
+				margin-top: 0;
+				font-size: 2rem;
+				text-align: left;
+			}
+
+			&-text {
+				font-size: 1.4rem;
+			}
+
+			&-card {
+				margin-left: 0;
+			}
+		}
+	}
 }
+
 @media (min-width: 992px) {
 	.nav {
 		margin-top: 2em;
@@ -290,6 +346,52 @@ img {
 			&-text {
 				font-size: 1.7rem;
 			}
+		}
+	}
+
+	.section {
+		&__content {
+			&-heading {
+				font-size: 2.6rem;
+				text-align: left;
+			}
+
+			&-text {
+				font-size: 1.7rem;
+			}
+
+			&-link {
+				a {
+					font-size: 1.5rem;
+				}
+			}
+
+			&-card {
+				max-width: 350px;
+				
+				&-text {
+					font-size: 1.4rem;
+				}
+
+				&-bottom-data {
+					.name {
+						font-size: 1.2rem;
+					}
+
+					.ceo {
+						font-size: 0.9rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.section {
+		&__content {
+			margin-left: 0;
+
 		}
 	}
 }

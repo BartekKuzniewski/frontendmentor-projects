@@ -60,7 +60,7 @@ img {
 }
 
 .header {
-  margin: 0 3em;
+  margin: 0 3em 4em;
 }
 
 .header__content {
@@ -129,6 +129,10 @@ img {
   background-color: #f6f6fe;
 }
 
+.section__img {
+  padding: 3em;
+}
+
 .section__content {
   margin: 8em 3em 0;
   padding-bottom: 5em;
@@ -170,6 +174,7 @@ img {
   position: relative;
   background-color: #fff;
   margin: 3em 2em;
+  max-width: 300px;
 }
 
 .section__content-card .quotes {
@@ -191,7 +196,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: .5em 2em 3em;
+  padding: 0.5em 2em 3em;
 }
 
 .section__content-card-bottom img {
@@ -229,6 +234,29 @@ img {
   .header__content-text {
     font-size: 1.7rem;
   }
+  .section__img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section__img img {
+    max-width: 80%;
+  }
+  .section__content-heading {
+    font-size: 2.2rem;
+  }
+  .section__content-text {
+    font-size: 1.6rem;
+  }
+  .section__content-link a {
+    font-size: 1.4rem;
+  }
 }
 
 @media (min-width: 756px) {
@@ -241,7 +269,7 @@ img {
             align-items: center;
   }
   .header {
-    margin-top: 4em;
+    margin: 4em;
   }
   .header__img {
     -webkit-box-ordinal-group: 2;
@@ -270,6 +298,25 @@ img {
   .header__content-contact-btn {
     width: 40%;
   }
+  .section__img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .section__img img {
+    max-width: 100%;
+  }
+  .section__content-heading {
+    margin-top: 0;
+    font-size: 2rem;
+    text-align: left;
+  }
+  .section__content-text {
+    font-size: 1.4rem;
+  }
+  .section__content-card {
+    margin-left: 0;
+  }
 }
 
 @media (min-width: 992px) {
@@ -287,6 +334,34 @@ img {
   }
   .header__content-text {
     font-size: 1.7rem;
+  }
+  .section__content-heading {
+    font-size: 2.6rem;
+    text-align: left;
+  }
+  .section__content-text {
+    font-size: 1.7rem;
+  }
+  .section__content-link a {
+    font-size: 1.5rem;
+  }
+  .section__content-card {
+    max-width: 350px;
+  }
+  .section__content-card-text {
+    font-size: 1.4rem;
+  }
+  .section__content-card-bottom-data .name {
+    font-size: 1.2rem;
+  }
+  .section__content-card-bottom-data .ceo {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section__content {
+    margin-left: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
