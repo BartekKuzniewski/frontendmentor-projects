@@ -214,6 +214,75 @@ img {
   font-size: 0.7rem;
 }
 
+.access {
+  background-color: #585989;
+  color: #fff;
+  padding: 6em 3em;
+}
+
+.access__info {
+  text-align: center;
+}
+
+.access__info-heading {
+  margin-bottom: 1em;
+  font-size: 1.8rem;
+}
+
+.access__info-text {
+  font-size: 1.4rem;
+  margin-bottom: 1.5em;
+}
+
+.access__contact {
+  text-align: center;
+}
+
+.access__contact input {
+  margin-bottom: 1em;
+  padding: 1em;
+  width: 80%;
+  border-radius: 4px;
+  border: 1px solid black;
+}
+
+.access__contact-btn {
+  width: 80%;
+  padding: 1em;
+  color: #fff;
+  font-weight: 700;
+  background: none;
+  background-color: #3065f8;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 1em;
+  -webkit-transition: 0.3s background-color, 0.3s color;
+  transition: 0.3s background-color, 0.3s color;
+}
+
+.access__contact-btn:hover, .access__contact-btn:focus {
+  outline: none;
+  background-color: #7096ff;
+  color: #fff;
+}
+
+.access__contact ::-webkit-input-placeholder {
+  opacity: 0.5;
+}
+
+.access__contact :-ms-input-placeholder {
+  opacity: 0.5;
+}
+
+.access__contact ::-ms-input-placeholder {
+  opacity: 0.5;
+}
+
+.access__contact ::placeholder {
+  opacity: 0.5;
+}
+
 @media (min-width: 576px) {
   .nav__logo {
     margin-left: 2em;
@@ -256,6 +325,12 @@ img {
   }
   .section__content-link a {
     font-size: 1.4rem;
+  }
+  .access__info-heading {
+    font-size: 2.2rem;
+  }
+  .access__info-text {
+    font-size: 1.6rem;
   }
 }
 

@@ -201,6 +201,60 @@ img {
 	}
 }
 
+.access {
+	background-color: $desaturated-blue;
+	color: $white;
+	padding: 6em 3em;
+
+	&__info {
+		text-align: center;
+
+		&-heading {
+			margin-bottom: 1em;
+			font-size: 1.8rem;
+		}
+		&-text {
+			font-size: 1.4rem;
+			margin-bottom: 1.5em;
+		}
+	}
+
+	&__contact {
+		text-align: center;
+
+		input {
+			margin-bottom: 1em;
+			padding: 1em;
+			width: 80%;
+			border-radius: 4px;
+			border: 1px solid black;
+		}
+
+		&-btn {
+			width: 80%;
+			padding: 1em;
+			color: $white;
+			font-weight: 700;
+			background: none;
+			background-color: $bright-blue;
+			border-radius: 4px;
+			border: none;
+			cursor: pointer;
+			margin-bottom: 1em;
+			transition: 0.3s background-color, 0.3s color;
+
+			&:hover,
+			&:focus {
+				outline: none;
+				background-color: hsl(224, 100%, 72%);
+				color: $white;
+			}
+		}
+		::placeholder {
+			opacity: 0.5;
+		}
+	}
+}
 // ==========
 // MEDIA
 // ==========
@@ -256,6 +310,17 @@ img {
 			}
 		}
 	}
+
+	.access {
+		&__info {
+			&-heading {
+				font-size: 2.2rem;
+			}
+			&-text {
+				font-size: 1.6rem;
+			}
+		}
+	}
 }
 @media (min-width: 756px) {
 	.wrapper {
@@ -307,7 +372,6 @@ img {
 		}
 
 		&__content {
-			
 			&-heading {
 				margin-top: 0;
 				font-size: 2rem;
@@ -323,6 +387,7 @@ img {
 			}
 		}
 	}
+
 }
 
 @media (min-width: 992px) {
@@ -368,7 +433,7 @@ img {
 
 			&-card {
 				max-width: 350px;
-				
+
 				&-text {
 					font-size: 1.4rem;
 				}
@@ -391,7 +456,6 @@ img {
 	.section {
 		&__content {
 			margin-left: 0;
-
 		}
 	}
 }
