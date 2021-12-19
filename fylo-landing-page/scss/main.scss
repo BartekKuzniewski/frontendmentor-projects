@@ -201,6 +201,7 @@ img {
 	}
 }
 
+// ACCESS SECTION
 .access {
 	background-color: $desaturated-blue;
 	color: $white;
@@ -221,7 +222,6 @@ img {
 
 	&__contact {
 		text-align: center;
-
 		input {
 			margin-bottom: 1em;
 			padding: 1em;
@@ -252,6 +252,58 @@ img {
 		}
 		::placeholder {
 			opacity: 0.5;
+		}
+	}
+}
+
+//FOOTER
+.footer {
+	color: $white;
+	background-color: $very-dark-blue;
+	padding: 6em 3em;
+
+	&__contact {
+		margin-top: 2em;
+		font-size: 1.5rem;
+
+		img {
+			padding-right: 1em;
+		}
+		&-phone {
+			display: flex;
+			margin-bottom: 1em;
+		}
+
+		&-mail {
+			display: flex;
+		}
+	}
+
+	&__faq {
+		margin: 3em 0;
+
+		&-list {
+			list-style: none;
+
+			&-item {
+				font-size: 1.5rem;
+				padding: 0.5em 0;
+				cursor: pointer;
+			}
+		}
+	}
+
+	&__socials {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		&-link {
+			color: $white;
+			font-size: 2.4rem;
+			text-align: center;
+			padding: 1em 0.5em;
+			cursor: pointer;
 		}
 	}
 }
@@ -326,6 +378,7 @@ img {
 	.wrapper {
 		display: flex;
 		align-items: center;
+		justify-content: center;
 	}
 
 	.header {
@@ -388,6 +441,22 @@ img {
 		}
 	}
 
+	.access {
+		&__info {
+			flex: 1;
+			margin-right: 5em;
+			text-align: left;
+		}
+
+		&__contact {
+			text-align: left;
+			flex: 1;
+
+			&-btn {
+				width: 40%;
+			}
+		}
+	}
 }
 
 @media (min-width: 992px) {
@@ -448,6 +517,12 @@ img {
 					}
 				}
 			}
+		}
+	}
+
+	.access {
+		&__info {
+			margin-right: 15em;
 		}
 	}
 }
