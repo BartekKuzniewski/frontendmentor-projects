@@ -12,8 +12,14 @@ html {
   font-family: 'Poppins', sans-serif;
 }
 
+.wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
 .header {
-  background-image: url("/clipboard-landing-page-master/images/bg-header-mobile.png");
+  background-image: url("/clipboard-landing-page/images/bg-header-mobile.png");
   background-size: contain;
   background-repeat: no-repeat;
   padding: 10em 3em;
@@ -41,13 +47,13 @@ html {
 }
 
 .header__info-heading {
-  font-size: 3em;
+  font-size: 3rem;
   color: #4c545d;
 }
 
 .header__info-text {
   font-size: 1.6rem;
-  margin: 1em 0 3em;
+  margin: 1em 0 2em;
   color: #9fabb2;
 }
 
@@ -69,6 +75,7 @@ html {
 
 .header__btns .btn {
   width: 90%;
+  max-width: 280px;
   padding: 1.5em;
   margin-bottom: 1em;
   color: #fff;
@@ -77,6 +84,8 @@ html {
   border-radius: 25px;
   border: none;
   cursor: pointer;
+  -webkit-transition: 0.4s background-color;
+  transition: 0.4s background-color;
 }
 
 .header__btns .btn--mac {
@@ -85,9 +94,36 @@ html {
           box-shadow: 1px 1px 10px #6173ff;
 }
 
+.header__btns .btn--mac:hover {
+  background-color: #5266ff;
+}
+
 .header__btns .btn--ios {
   background-color: #26baa4;
   -webkit-box-shadow: 0 0 5px #26baa4;
           box-shadow: 0 0 5px #26baa4;
+}
+
+.header__btns .btn--ios:hover {
+  background-color: #05d1b2;
+}
+
+@media (min-width: 576px) {
+  .header {
+    background-image: url("/clipboard-landing-page/images/bg-header-desktop.png");
+  }
+  .header__info-heading {
+    font-size: 3.4rem;
+  }
+  .header__btns {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .header__btns .btn {
+    margin: 1em;
+    font-size: 1.6rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
