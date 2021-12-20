@@ -302,7 +302,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 1em;
+  margin: 1em 0;
 }
 
 .footer__contact-mail {
@@ -472,6 +472,23 @@ img {
   }
   .access__contact-btn {
     width: 40%;
+  }
+  .footer .wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .footer__contact {
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+    margin-right: 3em;
+  }
+  .footer__faq {
+    margin-top: 0;
   }
 }
 

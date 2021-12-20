@@ -152,7 +152,6 @@ img {
 				font-size: 1.3rem;
 				text-decoration: none;
 				padding: 1em 0.5em;
-				// to do: underline
 			}
 		}
 
@@ -271,7 +270,7 @@ img {
 		}
 		&-phone {
 			display: flex;
-			margin-bottom: 1em;
+			margin: 1em 0;
 		}
 
 		&-mail {
@@ -455,6 +454,21 @@ img {
 			&-btn {
 				width: 40%;
 			}
+		}
+	}
+
+	.footer {
+		.wrapper {
+			justify-content: space-between;
+			align-items: baseline;
+		}
+		&__contact {
+			align-self: start;
+			margin-right: 3em;
+		}
+
+		&__faq {
+			margin-top: 0;
 		}
 	}
 }
