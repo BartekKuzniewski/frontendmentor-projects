@@ -1,0 +1,93 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header {
+  background-image: url("/clipboard-landing-page-master/images/bg-header-mobile.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 10em 3em;
+}
+
+.header__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.header__info-logo {
+  margin-bottom: 4em;
+}
+
+.header__info-heading {
+  font-size: 3em;
+  color: #4c545d;
+}
+
+.header__info-text {
+  font-size: 1.6rem;
+  margin: 1em 0 3em;
+  color: #9fabb2;
+}
+
+.header__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header__btns .btn {
+  width: 90%;
+  padding: 1.5em;
+  margin-bottom: 1em;
+  color: #fff;
+  font-weight: 600;
+  background: none;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+.header__btns .btn--mac {
+  background-color: #6173ff;
+  -webkit-box-shadow: 1px 1px 10px #6173ff;
+          box-shadow: 1px 1px 10px #6173ff;
+}
+
+.header__btns .btn--ios {
+  background-color: #26baa4;
+  -webkit-box-shadow: 0 0 5px #26baa4;
+          box-shadow: 0 0 5px #26baa4;
+}
+/*# sourceMappingURL=main.css.map */
