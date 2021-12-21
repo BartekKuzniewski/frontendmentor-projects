@@ -1,3 +1,27 @@
+.wrapper {
+  margin: 0auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.section-padding {
+  padding: 6em 3em;
+}
+
+.section-heading {
+  font-size: 2.4rem;
+  color: #4c545d;
+  margin-bottom: .8em;
+  text-align: center;
+}
+
+.section-text {
+  font-size: 1.6rem;
+  text-align: center;
+  color: #9fabb2;
+  margin-bottom: 5em;
+}
+
 *,
 *::after,
 *::before {
@@ -9,13 +33,7 @@
 
 html {
   font-size: 62.5%;
-  font-family: 'Poppins', sans-serif;
-}
-
-.wrapper {
-  margin: 0 auto;
-  max-width: 1200px;
-  width: 100%;
+  font-family: 'Bai Jamjuree', sans-serif;
 }
 
 .header {
@@ -108,6 +126,28 @@ html {
   background-color: #05d1b2;
 }
 
+.snippets-img {
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+.snippets__box {
+  margin-top: 3em;
+  text-align: center;
+}
+
+.snippets__box-heading {
+  font-size: 1.8rem;
+  color: #4c545d;
+  margin-bottom: 0.5em;
+}
+
+.snippets__box-text {
+  font-size: 1.5rem;
+  color: #9fabb2;
+  line-height: 24px;
+}
+
 @media (min-width: 576px) {
   .header {
     background-image: url("/clipboard-landing-page/images/bg-header-desktop.png");
@@ -124,6 +164,48 @@ html {
   .header__btns .btn {
     margin: 1em;
     font-size: 1.6rem;
+  }
+  .snippets .section-heading {
+    font-size: 2.8rem;
+  }
+  .snippets .section-text {
+    font-size: 1.8rem;
+  }
+  .snippets__box {
+    margin-top: 5em;
+  }
+  .snippets__box-heading {
+    font-size: 2.4rem;
+  }
+  .snippets__box-text {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 776px) {
+  .snippets__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .snippets__body-img {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+  }
+  .snippets__boxes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 /*# sourceMappingURL=main.css.map */
