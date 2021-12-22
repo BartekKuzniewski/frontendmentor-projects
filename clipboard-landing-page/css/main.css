@@ -5,7 +5,7 @@
 }
 
 .section-padding {
-  padding: 6em 3em;
+  padding: 7em 3em;
 }
 
 .section-heading {
@@ -19,7 +19,7 @@
   font-size: 1.6rem;
   text-align: center;
   color: #9fabb2;
-  margin-bottom: 5em;
+  margin-bottom: 3em;
 }
 
 *,
@@ -148,6 +148,10 @@ html {
   line-height: 24px;
 }
 
+.access-img {
+  width: 100%;
+}
+
 @media (min-width: 576px) {
   .header {
     background-image: url("/clipboard-landing-page/images/bg-header-desktop.png");
@@ -178,6 +182,12 @@ html {
     font-size: 2.4rem;
   }
   .snippets__box-text {
+    font-size: 1.8rem;
+  }
+  .access .section-heading {
+    font-size: 2.8rem;
+  }
+  .access .section-text {
     font-size: 1.8rem;
   }
 }
@@ -214,9 +224,27 @@ html {
     text-align: left;
     margin-left: 4em;
   }
+  .access__img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 7em;
+  }
+  .access__img img {
+    width: 80%;
+  }
 }
 
 @media (min-width: 992px) {
+  .header__info-text {
+    font-size: 2rem;
+  }
   .snippets__box-heading {
     font-size: 2.6rem;
   }
