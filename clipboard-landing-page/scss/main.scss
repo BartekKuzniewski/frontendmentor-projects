@@ -110,9 +110,91 @@ html {
 	}
 }
 
+// ACCESS
 .access {
 	&-img {
 		width: 100%;
+	}
+}
+
+// CHARGE
+
+.charge {
+	&__box {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		&-icon {
+			margin: 3em 0;
+		}
+
+		&-heading {
+			font-size: 1.8rem;
+			margin-bottom: 1em;
+			color: $dark-grayish-blue;
+		}
+
+		&-text {
+			font-size: 1.5rem;
+			color: $grayish-blue;
+			text-align: center;
+			margin-bottom: 2em;
+		}
+	}
+}
+
+// CORPORATIONS
+.clipboard {
+	.section-heading {
+		font-size: 2.5rem;
+	}
+
+	.wrapper {
+		max-width: 700px;
+	}
+}
+
+// FOOTER
+.footer {
+	background-color: hsl(180, 3%, 94%);
+
+	.wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		text-align: center;
+		padding-top: 2em;
+	}
+	&-logo {
+		width: 60px;
+		padding: 0.8em;
+		margin-bottom: 2em;
+	}
+
+	&__faq {
+		&-list {
+			list-style: none;
+
+			&-item {
+				font-size: 1.5rem;
+				color: $dark-grayish-blue;
+				padding: 0.8em;
+				transition: 0.4s color;
+				cursor: pointer;
+			}
+		}
+	}
+
+	&__socials {
+		margin: 1em 0;
+
+		&-logo {
+			padding: 1em;
+			cursor: pointer;
+		}
 	}
 }
 
@@ -167,6 +249,58 @@ html {
 			font-size: 1.8rem;
 		}
 	}
+
+	.charge {
+		.section-heading {
+			font-size: 2.8rem;
+		}
+
+		.section-text {
+			font-size: 1.8rem;
+		}
+
+		&__box {
+			&-heading {
+				font-size: 2.4rem;
+			}
+
+			&-text {
+				font-size: 1.8rem;
+			}
+		}
+	}
+
+	.clipboard {
+		.section-heading {
+			font-size: 2.8rem;
+		}
+
+		.section-text {
+			font-size: 1.8rem;
+			margin-bottom: 2em;
+		}
+	}
+
+	.footer {
+		.wrapper {
+			flex-direction: row;
+			align-items: flex-start;
+			justify-content: space-evenly;
+			margin-top: 1em;
+		}
+
+		&__faq {
+			&-list-item {
+				font-size: 1.3rem;
+				padding: 0.5em;
+			}
+
+		}
+
+		&__socials-logo {
+			width: 40px;
+		}
+	}
 }
 
 @media (min-width: 776px) {
@@ -216,6 +350,23 @@ html {
 
 		&__box-text {
 			font-size: 2rem;
+		}
+	}
+
+	.charge {
+		&__boxes {
+			display: flex;
+		}
+
+		&__box {
+			flex: 1;
+			margin: 0 2em;
+		}
+	}
+
+	.footer {
+		&__faq-list-item {
+			font-size: 1.5rem;
 		}
 	}
 }
