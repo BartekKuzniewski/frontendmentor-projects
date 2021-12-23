@@ -185,6 +185,26 @@ html {
   margin-bottom: 2em;
 }
 
+.gallery .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gallery__box-logo {
+  padding: 3em;
+}
+
 .clipboard .section-heading {
   font-size: 2.5rem;
 }
@@ -232,6 +252,10 @@ html {
   -webkit-transition: 0.4s color;
   transition: 0.4s color;
   cursor: pointer;
+}
+
+.footer__faq-list-item:hover {
+  color: #26baa4;
 }
 
 .footer__socials {
@@ -292,6 +316,14 @@ html {
   }
   .charge__box-text {
     font-size: 1.8rem;
+  }
+  .gallery .wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .clipboard .section-heading {
     font-size: 2.8rem;

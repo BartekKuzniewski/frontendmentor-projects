@@ -145,6 +145,21 @@ html {
 	}
 }
 
+// GALLERY 
+
+.gallery {
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__box-logo {
+		padding: 3em;
+	}
+}
+
 // CORPORATIONS
 .clipboard {
 	.section-heading {
@@ -184,6 +199,10 @@ html {
 				padding: 0.8em;
 				transition: 0.4s color;
 				cursor: pointer;
+
+				&:hover {
+					color: $strong-cyan;
+				}
 			}
 		}
 	}
@@ -270,6 +289,13 @@ html {
 		}
 	}
 
+	.gallery {
+		.wrapper {
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+	}
+
 	.clipboard {
 		.section-heading {
 			font-size: 2.8rem;
@@ -294,7 +320,6 @@ html {
 				font-size: 1.3rem;
 				padding: 0.5em;
 			}
-
 		}
 
 		&__socials-logo {
